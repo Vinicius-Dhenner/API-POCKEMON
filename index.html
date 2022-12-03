@@ -1,12 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" href="./public/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pockemon</title>
+    <title>PokeDex</title>
   </head>
   <body>
-      Ambiente preparado
-    <script type="module" src="/main.js"></script>
+    <header>
+      <img src="./src/img/pokeball.png" alt="Pokebola">
+      <h1>PokeDex</h1>
+    </header>
+    <main>
+      <section class="pokedex">
+        <div class="formLocalizar">
+          <input type="search" id="inputPesquisa"/>
+          <button id="btnLocalizar">Localizar</button>
+        </div>
+        <div class="display">
+
+        </div>
+      </section>
+    </main>
+    <script type="module" src="./src/js/main.js"></script>
   </body>
 </html>
