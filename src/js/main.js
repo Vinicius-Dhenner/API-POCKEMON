@@ -26,8 +26,9 @@ function criarCartao (pokemon) { /* FUNCAO QUE CRIA O CARTAO DO POKEMON */
     const cartaoPokemon = document.createElement('div'); /* CRIANDO UMA DIV QUE VAI SER O CARTAO */
     cartaoPokemon.className='cartaoPokemon'; /*ADCIONANDO UMA CLASSE A ESSA DIV*/ 
     cartaoPokemon.innerHTML = `
-        <img class="pokemonSprite" src="${pokemon.sprites.front_default}"/> <!--PEGANDO A IMAGEM DO POKEMON -->
+        <img class="pokemonSprite" src="${pokemon.sprites.other.dream_world.front_default}"/> <!--PEGANDO A IMAGEM DO POKEMON -->
         <h2>${pokemon.name}</h2> <!--PEGANDO O NOME DO POKEMON -->
     `;
+    pokedexDisplay.innerHTML = ''; /* O INNERHTML SUBSTITUI, PORTANTO ISSO FAZ SOBREPOR UM ELEMENTO VAZIO NO POKEMON Q JA EXISTE ANTES DE SUBSTITUIR POR UM NOVO*/
     pokedexDisplay.appendChild(cartaoPokemon); /* ADCIONANDO UM ELEMENTO FILHO A DIV DISPLAY DO HTML, O ELEMENTO FOLHO EH A DIV CARTAO POKEMON */
-}
+} 
