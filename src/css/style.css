@@ -44,7 +44,7 @@ main {
     align-items: center;
     gap: 20px;
     width: 50%;
-    background-color: azure;
+    background-color: #DCDCDC;
 }
 
 .formLocalizar input {
@@ -55,9 +55,52 @@ main {
 .formLocalizar button {
     width: 100%;
     padding: 8px;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #363636 inset, 0 0 0 0 #363636;
+    -webkit-transition: all 1000ms ease-in-out;
+    transition: all 1000ms ease-in-out;
+}
+
+.formLocalizar button:hover {
+    box-shadow: 0 0 10px 0 #363636 inset, 0 0 10px 4px #363636;
+    color: #252424;
 }
 
 .display {
     width: 50%;
     border: 1px solid black;
+    background-color: #363636;
+    border-radius: 8px;
 } 
+
+/* CAMPO DE CARD DO POKEMON */
+
+.cartaoPokemon {
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    padding: 5%;
+}
+
+.cartao {
+    position: relative;
+    width: 85%;
+    height: 85%;
+    border-radius: 6px;
+    background-color: #C0C0C0;
+    margin: 8%;
+    padding: 5%;
+}
+
+.pokemonSprite {
+    width: 90%;
+    height: 90%;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.pokemonSprite:hover{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
